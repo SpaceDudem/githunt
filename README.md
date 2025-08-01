@@ -1,49 +1,83 @@
-# GitHunt Chrome Extension - Manifest V3 Update
+<h1 align="center">
+  <img height="100" src="https://raw.github.com/kamranahmedse/githunt/master/public/img/logo.svg?sanitize=true" alt="GitHunt" /> <br> GitHunt - Manifest V3
+</h1>
 
-**Ready-to-install Chrome extension** - Updated for modern Chrome compatibility.
+<p align="center">
+  <a href="https://github.com/SpaceDudem/githunt/releases/latest">
+    <img src="https://img.shields.io/github/v/release/SpaceDudem/githunt" alt="version" />
+  </a>
+  <a href="https://github.com/SpaceDudem/githunt">
+    <img src="https://img.shields.io/badge/Chrome-Manifest%20V3-brightgreen" alt="manifest-v3" />
+  </a>
+  <a href="https://github.com/SpaceDudem/githunt/blob/master/license.md">
+    <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="license-mit" />
+  </a>
+</p>
+
+<p align="center">
+  <b>Hunt the most starred projects on GitHub</b><br>
+  <sub>✨ Modern Chrome Extension with Manifest V3 support ✨</sub> 
+</p>
 
 ## 🚀 Quick Install (No Building Required):
 
-### Option 1: Direct Download
-1. **Click "Code" → "Download ZIP"** above
+### Method 1: Download Release
+1. **[Download Latest Release](https://github.com/SpaceDudem/githunt/releases/latest)**
 2. **Extract the ZIP file**
-3. **Navigate to the `build/` folder** 
-4. **Open Chrome** → `chrome://extensions/`
-5. **Enable "Developer mode"** (toggle top-right)
-6. **Click "Load unpacked"**
-7. **Select the `build/` folder**
-8. **Done!** GitHunt replaces your new tab
+3. **Open Chrome** → `chrome://extensions/`
+4. **Enable "Developer mode"** (toggle top-right)
+5. **Click "Load unpacked"**
+6. **Select the extracted folder**
+7. **Done!** GitHunt replaces your new tab
 
-### Option 2: Git Clone
+### Method 2: Clone Repository
 ```bash
 git clone https://github.com/SpaceDudem/githunt.git
 cd githunt
-# Install the 'build' folder as Chrome extension
+# Load the 'build' folder in Chrome extensions
 ```
 
-## ✅ What's Fixed:
-- **Manifest V3** - Compatible with Chrome 88+
-- **Modern APIs** - Updated from deprecated browser_action
-- **Host Permissions** - Proper GitHub API access
-- **Security Compliant** - Passes Chrome Web Store requirements
+## ✅ What's Fixed in This Version:
+- **✅ Manifest V3** - Works with Chrome 88+ (original was V2)
+- **✅ Modern APIs** - Updated deprecated `browser_action` → `action`
+- **✅ Host Permissions** - Proper `host_permissions` for GitHub API
+- **✅ Security Compliant** - Passes modern Chrome Web Store requirements
+- **✅ Build Process** - Fixed Node.js v20+ compatibility issues
 
-## 📁 Extension Files:
-The **ready-to-install extension** is in the `build/` folder:
+## 📸 Screenshots:
+
+<p align="center">
+  <img alt="GitHunt Weekly Trending" src="./.github/list.png">
+  <b>Weekly Trending Projects – List View</b><br>
+  <sub>💥 Keep Scrolling to load past weeks 💥</sub>
+</p>
+
+<p align="center">
+  <img alt="GitHunt Grid View" src="./.github/grid.png">
+  <b>Weekly Trending Projects – Grid View</b><br>
+  <sub>💥 Change the view options from the filters list 💥</sub>
+</p>
+
+## 🛠️ For Developers:
+
+To build from source:
+```bash
+git clone https://github.com/SpaceDudem/githunt.git
+cd githunt
+npm install
+npm run build-chrome
+# Load the 'build' folder in Chrome extensions
 ```
-build/
-├── manifest.json (V3 format)
-├── index.html
-├── img/ (icons)
-└── static/ (CSS, JS)
-```
 
-## 🐛 Issues?
-- Extension loads immediately after installation
-- No additional setup or API keys required
-- Works with latest Chrome versions
+## 🐛 Issues & Contributions:
+- Report bugs in [Issues](https://github.com/SpaceDudem/githunt/issues)
+- Pull requests welcome!
+- This fork maintains the original functionality with modern Chrome compatibility
 
-## 📚 Original Project:
-https://github.com/kamranahmedse/githunt
+## 📚 Credits:
+- **Original Project**: [kamranahmedse/githunt](https://github.com/kamranahmedse/githunt)
+- **Created by**: [Kamran Ahmed](https://kamranahmed.info)
+- **Manifest V3 Update**: SpaceDudem
 
----
-*This fork updates the extension to work with modern Chrome's Manifest V3 requirements.*
+## 📄 License:
+MIT © [Kamran Ahmed](https://kamranahmed.info)
